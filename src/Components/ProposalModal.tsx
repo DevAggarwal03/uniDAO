@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useWaitForTransactionReceipt, useWriteContract } from "wagmi";
-import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
+import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
+// import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
 
 const ProposalModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

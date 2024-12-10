@@ -1,6 +1,7 @@
 import { Clock, University } from "lucide-react";
 import { useReadContract } from "wagmi";
-import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
+import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
+// import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
 import { useState } from "react";
 import GetUniversityName from "./GetUniversityName";
 
@@ -25,7 +26,7 @@ const ProposalCard = ({proposalId}:any) => {
   return (
     <div>
       {data ? (
-        <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="bg-white min-w-[400px] shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center">
               <University className="mr-2 text-blue-600" size={24} />
@@ -37,7 +38,7 @@ const ProposalCard = ({proposalId}:any) => {
           </div>
 
           <h3 className="text-xl font-bold mb-2">{data[1]}</h3>
-          <p className="text-gray-600 mb-4 line-clamp-3">{data[2]}</p>
+          <p className="text-gray-600 mb-4 line-clamp-3">{data[2].slice(0, 50)}</p>
 
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center text-gray-600">

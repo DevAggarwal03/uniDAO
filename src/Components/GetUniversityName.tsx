@@ -1,5 +1,6 @@
 import { useReadContract } from "wagmi";
-import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
+import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
+// import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
 
 const GetUniversityName = ({address}:any) => {
 
@@ -17,7 +18,7 @@ const GetUniversityName = ({address}:any) => {
     return ( 
         <h2 className="font-semibold text-lg">
             {
-                member ? (member[0].slice(1, -1)) : ("University Name")
+                member ? (member[0]) : ("University Name")
             }
         </h2>
      );

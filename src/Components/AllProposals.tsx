@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, University } from 'lucide-react';
 import ProposalModal from './ProposalModal';
-import { contractAbi, contractAddress } from '../ContractDetails/EduChain';
+import { contractAbi, contractAddress } from '../ContractDetails/MantleSepolia';
+// import { contractAbi, contractAddress } from '../ContractDetails/EduChain';
 import { useReadContract } from 'wagmi';
 import ProposalCard from './ProposalCard';
 

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { MemberDashboard } from "../Components/Navbar";
 import SliderMenu from "../Components/SliderMenu";
-import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
+import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
+// import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
 import { useReadContract } from "wagmi";
 
 const universities = [
@@ -69,7 +70,7 @@ const AllMembers = () => {
                   className="p-4 bg-white rounded-lg flex flex-col gap-y-2 shadow-md hover:shadow-lg transition-shadow"
                 >
                   <h2 className="text-xl font-semibold text-gray-800">
-                    {member.universityName !== "Admin" ? member.universityName.slice(1, -1) : member.universityName}
+                    {member.universityName !== "Admin" ? member.universityName : member.universityName}
                   </h2>
                   <div className="flex justify-between w-full">
                     <span>Role: {member.role}</span>
