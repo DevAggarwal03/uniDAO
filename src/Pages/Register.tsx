@@ -78,7 +78,7 @@ const Register: React.FC = () => {
 
   const toExplorer = (e: React.FormEvent) => {
     e.preventDefault();
-    window.open(`https://edu-chain-testnet.blockscout.com/tx/${hash}`, '_blank')
+    window.open(`https://explorer.sepolia.mantle.xyz/tx/${hash}`, '_blank')
   }
 
   useEffect(() => {
