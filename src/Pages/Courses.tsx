@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from '../Components/Navbar';
 
 const Courses = () => {
-  const [selectedCourseId, setSelectedCourseId] = useState(null);
+  const [selectedCourseId, setSelectedCourseId] = useState<any | undefined>();
   const [searchTerm, setSearchTerm] = useState('');
-  const [hoveredCourseId, setHoveredCourseId] = useState(null);
+  const [hoveredCourseId, setHoveredCourseId] = useState<any | undefined>();
 
   const votedCourses = [
     {
@@ -41,7 +41,7 @@ const Courses = () => {
     }
   ];
 
-  const CourseDetailsModal = ({ course, onClose }) => (
+  const CourseDetailsModal = ({ course, onClose }:any) => (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 overflow-y-auto">
       <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-fade-in-up">
         <div className="h-36 bg-gray-100 flex items-center justify-center">

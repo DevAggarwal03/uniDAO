@@ -15,8 +15,8 @@ const ProposalModal = () => {
     hash
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
+  const handleInputChange = (e: React.FormEvent) => {
+    const { name, value }:any = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -28,7 +28,7 @@ const ProposalModal = () => {
     window.open(`https://explorer.sepolia.mantle.xyz/tx/${hash}`, '_blank')
   }
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
     console.log("Submitted Data:", formData);
     try {

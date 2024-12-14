@@ -2,7 +2,6 @@ import { Clock, University } from "lucide-react";
 import { useReadContract } from "wagmi";
 import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
 // import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
-import { useState } from "react";
 import GetUniversityName from "./GetUniversityName";
 
 const ProposalCard = ({proposalId}:any) => {
@@ -17,8 +16,8 @@ const ProposalCard = ({proposalId}:any) => {
   });
   console.log(data? data[5]: undefined);
     expiryDate = data ? new Date(parseInt(data[6]) * 1000) : undefined;
-    modifiedDate = data? `${expiryDate.getUTCDate()}/${expiryDate.getUTCMonth() + 1}/${expiryDate.getFullYear()}` : undefined;
-    modifiedTime = data ? `${expiryDate.getUTCHours()}:${expiryDate.getUTCMinutes()}:${expiryDate.getUTCSeconds()}` : undefined;
+    modifiedDate = data? `${expiryDate?.getUTCDate()}/${expiryDate?.getMonth() ? expiryDate?.getUTCMonth() : 0 + 1}/${expiryDate?.getFullYear()}` : undefined;
+    modifiedTime = data ? `${expiryDate?.getUTCHours()}:${expiryDate?.getUTCMinutes()}:${expiryDate?.getUTCSeconds()}` : undefined;
   
   
 //   console.log(expiryDate, modifiedDate, modifiedTime);

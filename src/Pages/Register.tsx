@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Home, University, UserCheck } from "lucide-react";
-import { useAccount, useConnect, useReadContract, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
+import { useAccount, useReadContract, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
 import { contractAbi, contractAddress } from "../ContractDetails/MantleSepolia";
 // import { contractAbi, contractAddress } from "../ContractDetails/EduChain";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ interface FormData {
 
 const Register: React.FC = () => {
 
-  const [isMember, setIsMember] = useState(false);
+  // const [isMember, setIsMember] = useState(false);
   const navigate = useNavigate()
   const connectedAcc = useAccount()
   const [formData, setFormData] = useState<FormData>({
