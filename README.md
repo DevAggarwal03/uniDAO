@@ -47,6 +47,12 @@ Follow these steps to set up the University DAO application locally:
 3.  **Mantle Sepolia Wallet**: Set up a wallet connected to the Mantle Sepolia Testnet. Use [Metamask](https://metamask.io/) or a similar wallet.
 
   
+  ### Important Links
+
+1. [Deployed Site Link](https://university-dao.onrender.com/)
+2. [Contract Explorer Link](https://sepolia.mantlescan.xyz/address/0xf1da7f0d23d75dc63706a4c918ee34a123235720)
+3. [Demo Video Link]( https://drive.google.com/file/d/1wETeWCo0bFfmcDiIJ38jGVUYXHOEwmCt/view?usp=sharing)
+4. [Github](https://github.com/DevAggarwal03/uniDAO)
 
 ### Steps
 
