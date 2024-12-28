@@ -1,50 +1,123 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# University DAO
 
-Currently, two official plugins are available:
+  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+University DAO is a Decentralized Autonomous Organization (DAO) designed to revolutionize the way universities decide their course curriculums. This application empowers colleges to collaboratively vote on course curriculums for university students, ensuring inclusivity and collective decision-making. Students can visit the application to view the finalized curriculums in real-time.
 
-## Expanding the ESLint configuration
+  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The application is built on the Mantle Sepolia Testnet, leveraging blockchain technology for transparency, security, and decentralization.
 
-- Configure the top-level `parserOptions` property like this:
+  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Features
+
+  
+
+-  **Decentralized Voting**: Colleges can propose and vote on course curriculums.
+
+-  **Transparent Process**: All votes and decisions are recorded on the blockchain, ensuring transparency.
+
+-  **Student Access**: Students can easily access the selected course curriculums.
+- **Mantle Integration**: Smart Contract is deployed on Mantle sepolia testnet.
+
+  
+
+---
+
+  
+
+## Local Setup Instructions
+
+  
+
+Follow these steps to set up the University DAO application locally:
+
+  
+
+### Prerequisites
+
+  
+
+1.  **Node.js and npm**: Ensure you have Node.js (v16 or higher) and npm installed. You can download them from [Node.js official website](https://nodejs.org/).
+
+2.  **Git**: Install Git for cloning the repository. Download it from [Git official website](https://git-scm.com/).
+
+3.  **Mantle Sepolia Wallet**: Set up a wallet connected to the Mantle Sepolia Testnet. Use [Metamask](https://metamask.io/) or a similar wallet.
+
+  
+
+### Steps
+
+  
+
+1.  **Clone the Repository**
+
+  
+
+```bash
+
+git clone https://github.com/DevAggarwal03/uniDAO.git
+
+cd university-dao
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2.  **Install Dependencies**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+  
+
+```bash
+
+npm install
+
 ```
+
+  
+
+
+3.  **Start the Application**
+
+  
+
+Run the development server:
+
+  
+
+```bash
+
+npm run dev
+
+```
+
+  
+
+4.  **Access the Application**
+
+  
+
+Open your browser and navigate to `http://localhost:5173` to access the application.
+
+  
+
+---
+
+  
+
+## Contributing
+
+  
+
+We welcome contributions! Feel free to submit issues or pull requests to enhance the project.
+
+  
+
+---
+
+
+- Built on the Mantle Sepolia Testnet
+
+- Inspired by the need for inclusive and transparent curriculum design processes.
